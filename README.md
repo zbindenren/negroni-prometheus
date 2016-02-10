@@ -17,7 +17,7 @@ Take a look at the [example](./example/main.go).
 An endpoint with the following information (stripped output):
 ```
 ...
-# HELP negroni_request_duration_milliseconds How long it took to process the request, partined by status code, method and HTTP path.
+# HELP negroni_request_duration_milliseconds How long it took to process the request, partitioned by status code, method and HTTP path.
 # TYPE negroni_request_duration_milliseconds histogram
 negroni_request_duration_milliseconds_bucket{code="OK",method="GET",path="/metrics",service="serviceName",le="300"} 1
 negroni_request_duration_milliseconds_bucket{code="OK",method="GET",path="/metrics",service="serviceName",le="1200"} 1

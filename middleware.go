@@ -42,7 +42,7 @@ func NewMiddleware(name string, buckets ...float64) *Middleware {
 	}
 	m.latency = prometheus.NewHistogramVec(prometheus.HistogramOpts{
 		Name:        latencyName,
-		Help:        "How long it took to process the request, partined by status code, method and HTTP path.",
+		Help:        "How long it took to process the request, partitioned by status code, method and HTTP path.",
 		ConstLabels: prometheus.Labels{"service": name},
 		Buckets:     buckets,
 	},
