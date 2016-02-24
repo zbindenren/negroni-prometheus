@@ -1,4 +1,4 @@
-# negroni-prometheus [![GoDoc](http://godoc.org/github.com/zbinderen/negroni-prometheus?status.svg)](http://godoc.org/github.com/zbindenren/negroni-prometheus)
+# negroni-prometheus [![GoDoc](http://godoc.org/github.com/zbinderen/negroni-prometheus?status.svg)](http://godoc.org/github.com/zbindenren/negroni-prometheus) [![Go Report Card](https://goreportcard.com/badge/github.com/zbindenren/negroni-prometheus)](https://goreportcard.com/report/github.com/zbindenren/negroni-prometheus)
 [Prometheus](http://prometheus.io) middleware for [negroni](https://github.com/codegangsta/negroni).
 
 ## Why
