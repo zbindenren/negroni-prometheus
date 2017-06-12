@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/codegangsta/negroni"
 	"github.com/prometheus/client_golang/prometheus"
+	"github.com/urfave/negroni"
 )
 
 func Test_Logger(t *testing.T) {
