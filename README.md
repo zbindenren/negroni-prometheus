@@ -6,6 +6,12 @@
 
 Instead of logging request times, it is considered best practice to provide an endpoint for instrumentation tools (like prometheus).
 
+## Installation
+
+```bash
+$ go get github.com/zbindenren/negroni-prometheus
+```
+
 ## Usage
 
 Use this middleware like the `negroni.Logger` middleware (after `negroni.Recovery`, before every other middleware).
