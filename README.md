@@ -16,7 +16,9 @@ $ go get github.com/zbindenren/negroni-prometheus
 
 Use this middleware like the `negroni.Logger` middleware (after `negroni.Recovery`, before every other middleware).
 
-Take a look at the [example](./example/main.go).
+Take a look at the [example](./example/withPath/main.go). It implements instrumentation by partitioning by status code, path, and method.
+
+In other instances, instrumentation partitioned by paths can become extreme if your application has many custom endpoints. Data from instrumentation may become too much to deliver. Look at this other [example](./example/withOutPath/main.go).
 
 ## What do you get
 
