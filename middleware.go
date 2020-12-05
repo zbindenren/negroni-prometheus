@@ -54,8 +54,8 @@ func NewMiddleware(name string, buckets ...float64) *Middleware {
 
 func (m *Middleware) ServeHTTP(rw http.ResponseWriter, r *http.Request, next http.HandlerFunc) {
 	start := time.Now()
-	next(rw, r)
 	res := negroni.NewResponseWriter(rw)
+	next(res, r)
 	m.reqs.WithLabelValues(http.StatusText(res.Status()), r.Method, r.URL.Path).Inc()
 	m.latency.WithLabelValues(http.StatusText(res.Status()), r.Method, r.URL.Path).Observe(float64(time.Since(start).Nanoseconds()) / 1000000)
 }
